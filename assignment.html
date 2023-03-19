@@ -1,0 +1,342 @@
+<html>
+
+<head>
+    <title>Edyoda Stories</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container {
+            align-items: center;
+        }
+
+        header {
+
+            padding: 16px 78px;
+            background-color: #fff;
+            box-shadow: 0 1px 1px #ccc;
+
+        }
+
+        .logo-container {
+            font-size: 32px;
+            color: #0084ff;
+            font-family: Raleway sans-serif;
+            font-weight: 800;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .stories-logo {
+            display: block;
+            font-style: italic;
+            font-family: Raleway;
+            font-weight: 500;
+            color: #000080;
+            position: relative;
+            margin-top: -6px;
+        }
+
+        .angledown-logo {
+            color: #000;
+            padding: 0px 8px;
+            cursor: pointer;
+        }
+
+        .dropdown-text {
+            color: #000;
+            padding-left: 65px;
+
+        }
+
+        .about-edyoda {
+            color: #ccc;
+            font-family: sans-serif;
+            padding-left: 350px;
+            font-weight: 200;
+            font-size: 15px;
+        }
+
+        .about-edyoda-part {
+            color: #ccc;
+            font-family: sans-serif;
+            font-weight: 200;
+            font-size: 15px;
+            padding-left: 715px;
+            margin-top: -15px;
+            display: block;
+        }
+
+        .btn-tag {
+            background-color: #0084ff;
+            padding: 15px 30px;
+            border-radius: 25px;
+            border-width: 0px;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 1100px;
+            margin-top: -45px;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: #f2f6ff;
+        }
+
+        .heading-container {
+            margin-top: 30px;
+            margin-left: 270px;
+            color: #000;
+            font-weight: 600;
+            font-family: sans-serif;
+
+        }
+
+        .dropdown-container {
+            display: inline-block;
+        }
+
+        .filter-text {
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 8px;
+            font-family: sans-serif;
+        }
+
+        .filter-text-container {
+            margin-left: 275px;
+            margin-top: 30px;
+        }
+
+        .filter {
+            color: #3a7ca5;
+        }
+
+        .active-category-container {
+
+            margin-top: 20px;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .active-category {
+            margin-left: 260px;
+            color: #fff;
+            Background-color: #0084ff;
+            border-width: 0px;
+            height: 40px;
+            width: 60px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        .categories-container {
+            Padding: 6px 14px;
+            Width: auto;
+            color: #0084ff;
+            border-radius: 15px;
+            border: 1px solid #0084ff;
+            margin: 5px;
+            Cursor: pointer;
+            background-color: #f2f6ff;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .categories-container-sub {
+            margin-left: 275px;
+        }
+
+        .image-section-container {
+            height: 100%;
+            height: 176px;
+            width: 100%;
+            object-fit: cover;
+            Width: 100%;
+            Border-top-left-radius: 5px;
+            Border-top-right-radius: 5px;
+
+        }
+
+        .title-container {
+            font-family: sans-serif;
+            padding-top: 5px;
+            padding-left: 24px;
+            padding-bottom: 8px;
+            font-size: 18px;
+            text-align: left;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .author-container {
+            font-family: sans-serif;
+            padding-left: 24px;
+            padding-top: 4px;
+            color: #0096ff;
+            font-size: 14px;
+            font-style: Italic;
+            font-weight: 500;
+
+        }
+
+        .date-container {
+            
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            font-weight: 300;
+
+        }
+
+        .card-text-container {
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .6);
+            margin: 4px 0;
+            padding: 10px 24px;
+        }
+
+        .table-container {
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 1px #0084ff;
+
+        }
+
+        .table-container-head {
+            border-spacing: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-section {
+            background-color: #172146;
+            padding: 80px 16%;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="logo-container">EDYODA</span>
+            <div class="dropdown-container">
+                <span class="dropdown-text">Explore Categories</span>
+                <span class="angledown-logo"><i class="fa-solid fa-angle-down"></i></span>
+            </div>
+            <span class="about-edyoda">Edyoda is a learning and knowledge</span>
+            <span class="stories-logo">Stories</span>
+            <span class="about-edyoda-part">sharing platform for techies</span>
+            <button class="btn-tag">Go To Main Website</button>
+        </div>
+    </header>
+    <div>
+        <h1 class="heading-container">Trending Posts</h1>
+        <div class="filter-text-container">
+            <span class="filter"><i class="fa-solid fa-filter"></i></span>
+            <span class="filter-text">Filter by Category</span>
+        </div>
+    </div>
+    <div class="active-category-container">
+        <button class="active-category">All</button>
+        <button class="categories-container">Artificial Intelligence</button>
+        <button class="categories-container">Cloud Computing</button>
+        <button class="categories-container">DevOps</button>
+        <button class="categories-container">Programming Languages</button>
+        <button class="categories-container">Mobile Application Development</button>
+        <button class="categories-container">Technology and Tools</button>
+    </div>
+    <div>
+        <button class="categories-container categories-container-sub">Get a Job in a Tech Company</button>
+        <button class="categories-container">Others</button>
+    </div>
+    <div>
+        <table class="table-container-head">
+            <tr>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/introduction-to-a-machine-learning-online-course"
+                        target="_blank">
+                        <img alt="Machine learning" class="image-section-container"
+                            src="https://edyoda.s3.amazonaws.com/media/blog-images/practical_machine_learning_1.png" /></a>
+                    <h3 class="title-container">Introduction to a Machine<br />Learning Course</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">23 Aug 2019</span>
+                    <p class="card-text-container">We have had an insight into Artificial<br />intelligence Well.One of
+                        its subfields<br />is machine learning and this<br />introduction will help you get a
+                        fair<br />idea of what this machine learning.</p>
+                </td>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/lamp-stack-vs-mean-stack-choosing-the-right-platform-for-your-web-application-development">
+                    <img alt="lamp stack" class="image-section-container"
+                        src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png" /></a>
+                    <h3 class="title-container">LAMP Stack Vs MEAN<br />stack: Choosimg the...</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">24 Aug 2019</span>
+                    <p class="card-text-container">In today's dynamic world.<br />devolping a rapid
+                        application<br />with a smooth user interface that<br />can adapt to specific features
+                        is<br />the main business requirement...</p>
+                </td>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/impact-of-cloud-computing-in-various-industries">
+                    <img alt="cloud computing" class="image-section-container"
+                        src="https://edyoda.s3.amazonaws.com/media/blog-images/4.png" /></a>
+                    <h3 class="title-container">Impact of Cloud<br />Computing in various...</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">24 Aug 2019</span>
+                    <p class="card-text-container">Cloud computing has been<br />rapidly gainig pace in the world <br />
+                        of information technology. It has <br />been observed that over 90% of <br />global enterprises
+                        are using clou...</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/challenges-of-machine-learning-in-big-data-analytics">
+                    <img alt="big data" class="image-section-container"
+                        src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png" /></a>
+                    <h3 class="title-container">Challenges of Machine<br />Learning in Big Data...</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">24 Aug 2019</span>
+                    <p class="card-text-container">Machine Learning is a subset of<br />artificial intelligence which is an<br/>important part of computer<br/>science. The revolution of Big<br/>Data promises to transform the...</p>
+                </td>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/breaking-the-myths-around-cybersecurity">
+                    <img alt="cyber security" class="image-section-container"
+                        src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png" /></a>
+                    <h3 class="title-container">Breaking the Myths<br />around Cybersecurity</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">26 Aug 2019</span>
+                    <p class="card-text-container">Cybersecurity plays an integral<br/>role in the process of good<br/>business models. But even <br/>cybersecurity programs built with <br/>good intentions can fall short in...</p>
+                </td>
+                <td class="table-container">
+                    <a href="https://www.edyoda.com/stories/importance-of-data-backup-and-recovery-in-the-it-industry">
+                    <img alt="Data backup" class="image-section-container"
+                        src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png" /></a>
+                    <h3 class="title-container">Importance of Data<br/>Backup and Recovery i...</h3>
+                    <span class="author-container">EdYoda</span> | <span class="date-container">26 Aug 2019</span>
+                    <p class="card-text-container">A business must always <br/>introspect the areas where they<br/>lack in order to bring about a <br/>positive change in the work<br/>environment. One of the main...</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <footer class="footer-section">
+    
+        </footer>
+    </div>
+</body>
+
+</html>
